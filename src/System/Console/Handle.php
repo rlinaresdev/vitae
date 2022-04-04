@@ -1,4 +1,5 @@
 <?php
+namespace Vitae\Console;
 
 /*
  *---------------------------------------------------------
@@ -7,11 +8,11 @@
  *---------------------------------------------------------
 */
 
+class Handle {
 
-/* VIEWS */
-$this->loadViewsFrom(__DIR__.'/Views', 'vitae');
-
-/* ASSETS */
-$this->publishes([
-   __HTTP__."Resources" => public_path("vitae"),
-], "vitae");
+   public function commands() {
+      return [
+         \Vitae\Console\Command\Resource::class,
+      ];
+   }
+}

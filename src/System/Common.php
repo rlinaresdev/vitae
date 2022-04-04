@@ -14,6 +14,7 @@ define("__HTTP__", realpath(__DIR__."/../Http/")."/");
 
 ##LOAD ROUTES
 $PROVIDERS = [
+   \Vitae\Providers\ConsoleServiceProvider::class,
    \Vitae\Providers\RouteServiceProvider::class
 ];
 
