@@ -21,9 +21,29 @@ class Controller extends BaseController {
 
    protected $path = "vitae::";
 
+   protected $varViews = [
+      "language" => "es_DO",
+      "charset"   => "utf-8",
+      "title"     => "Vitae"
+   ];
+
 
    public function boot($app) {
       $this->app = $app;
+
+      ## VIEW PARSE
+      $this->share($this->varViews);
+
+      ## APPSUPPORT PARSE
+      if( method_exists($app, "share") ) {
+         if( is_array( ($appData = $app->data() ) ) ){
+            $this->share($appData);
+         }
+      }
+   }
+
+   public function share($data) {
+      view()->share($data);
    }
 
    public function render($view=NULL, $data=[], $mergeData=[]) {
@@ -31,7 +51,7 @@ class Controller extends BaseController {
       if(view()->exists(($path = $this->path.$view))) {
          return view($path, $data, $mergeData);
       }
-      
+
       abort(500, "La vista {$path} no existe");
    }
 
