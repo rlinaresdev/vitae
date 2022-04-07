@@ -1,1 +1,26 @@
 @charset "utf-8";
+.vitae{
+   background: #f0f0f0;
+}
+
+/* NAVBAR */
+.vitae .navbar {
+   border-bottom: none !important;
+   min-height: 50px;
+   margin-bottom:  15px;
+   padding: 0 0;
+}
+.vitae .navbar .vitae-nav-right .dropdown-toggle [class*="mdi mdi-"] {
+   display: inline-block;
+   font-size: 32px;
+   line-height: 90%;
+   margin: 0 -5px -5px 0;
+   position: relative;
+   top: 5px;
+}
+.vitae .navbar .vitae-nav-right .dropdown-toggle:after{
+   margin-left: -10px;
+}
+.vitae .navbar .nav-link {
+   color: #777;
+}
