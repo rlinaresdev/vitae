@@ -37,6 +37,18 @@
             </div>
          </nav>
 
+         <section class="row">
+            <article class="col-4">
+               <img src="{{url("vitae/images/linares.png")}}" width="200" alt="@">
+            </article>
+            <article class="col-8">
+               <hgroup>
+                  <h1>Ramon A Linares Febles</h1>
+                  <h4></h4>
+               </hgroup>
+            </article>
+         </section>
+
          @yield("body")
 
       </article>
