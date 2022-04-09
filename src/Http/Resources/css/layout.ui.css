@@ -2,18 +2,19 @@
 *{
    text-align: left;
 }
-.vitae{
+body{
    background: #f0f0f0;
 }
 
 /* NAVBAR */
-.vitae .navbar {
+[role=vitae] .vitae-navbar .navbar {
    border-bottom-color: #e0e0e0 !important;
+   border-radius: 0 0;
    min-height: 50px;
    margin-bottom:  15px;
    padding: 0 0;
 }
-.vitae .navbar .vitae-nav-right .dropdown-toggle [class*="mdi mdi-"] {
+[role=vitae] .vitae-navbar .navbar .vitae-nav-right .dropdown-toggle [class*="mdi mdi-"] {
    display: inline-block;
    font-size: 32px;
    line-height: 90%;
@@ -21,9 +22,14 @@
    position: relative;
    top: 5px;
 }
-.vitae .navbar .vitae-nav-right .dropdown-toggle:after{
+[role=vitae] .vitae-navbar .navbar .vitae-nav-right .dropdown-toggle:after{
    margin-left: -10px;
 }
-.vitae .navbar .nav-link {
+[role=vitae] .vitae-navbar .navbar .nav-link {
    color: #777;
+}
+
+/* VITAE LG LAYOUT */
+[role=vitae].vitae-layout-lg {
+
 }
