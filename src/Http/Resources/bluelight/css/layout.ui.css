@@ -7,3 +7,54 @@ body{
    margin: 0 0;
    padding: 0 0;
 }
+[role=bluelight] {
+   background: #ddd;
+   display: flex;
+   height: 100vh;
+   margin: 0 20% 0 20%;
+}
+
+[role=bluelight] .bluelight-nav,
+[role=bluelight] .bluelight-aside{
+   background: #aaa;
+   width: 25%;
+}
+[role=bluelight] .bluelight-body{
+   width: 50%;
+}
+@media( max-width:1680px ) {
+   [role=bluelight] {
+      margin: 0 15% 0 15%;
+   }
+}
+@media( max-width:1380px ) {
+   [role=bluelight] {
+      margin: 0 10% 0 10%;
+   }
+}
+@media( max-width:990px ) {
+   [role=bluelight] {
+      margin: 0 0;
+   }
+}
+@media( max-width:860px ) {
+   [role=bluelight] .bluelight-nav,
+   [role=bluelight] .bluelight-aside{
+      position: fixed;
+      width: 280px;
+   }
+   [role=bluelight] .bluelight-nav {
+      bottom: 0;
+      left:-280px;
+      top: 0;
+   }
+   [role=bluelight] .bluelight-aside {
+      bottom: 0;
+      right:-280px;
+      top: 0;
+   }
+   [role=bluelight] .bluelight-body{
+      background: #fff;
+      width: 100%;
+   }
+}

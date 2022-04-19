@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{$language}}" dir="ltr">
-
    <head>
       <meta charset="{{$charset}}">
       <title>{{$title}}</title>
       <!-- CSS only -->
-      <link href="{{url('vitae/css/bootstrap.min.css')}}" rel="stylesheet">
-      <link href="{{url('vitae/css/mdi-6595.min.css')}}" rel="stylesheet">
-      <link href="{{url('vitae/css/layout.ui.css')}}" rel="stylesheet">
+      <link href="{{$skin->url('css/bootstrap.min.css')}}" rel="stylesheet">
+      <link href="{{$skin->url('css/mdi-6595.min.css')}}" rel="stylesheet">
+      <link href="{{$skin->url('css/layout.ui.css')}}" rel="stylesheet">
    </head>
 
    <body>
-      <main role="vitae" class="layout-md">
+      <main role="bluelight" class="layout-md">
+         <nav class="bluelight-nav">
+            Nav
+         </nav>
 
+         <section class="bluelight-body">
+            Content
+         </section>
+
+         <aside class="bluelight-aside">
+            Aside
+         </aside>
       </main>
-
-      <script src="{{url('vitae/js/jquery-360.min.js')}}"></script>
-      <script src="{{url('vitae/js/bootstrap.min.js')}}"></script>
-      <script src="{{url('vitae/js/layout.ui.js')}}"></script>
+      <script src="{{$skin->url('js/jquery-360.min.js')}}"></script>
+      <script src="{{$skin->url('js/bootstrap.min.js')}}"></script>
+      <script src="{{$skin->url('js/layout.ui.js')}}"></script>
    </body>
-
 </html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{
+   text-align: left;
+}
+body{
+   background: #f0f0f0;
+}
+
+/* NAVBAR */
+[role=vitae] .vitae-navbar .navbar {
+   border-bottom-color: #e0e0e0 !important;
+   border-radius: 0 0;
+   min-height: 50px;
+   margin-bottom:  15px;
+   padding: 0 0;
+}
+[role=vitae] .vitae-navbar .navbar .vitae-nav-right .dropdown-toggle [class*="mdi mdi-"] {
+   display: inline-block;
+   font-size: 32px;
+   line-height: 90%;
+   margin: 0 -5px -5px 0;
+   position: relative;
+   top: 5px;
+}
+[role=vitae] .vitae-navbar .navbar .vitae-nav-right .dropdown-toggle:after{
+   margin-left: -10px;
+}
+[role=vitae] .vitae-navbar .navbar .nav-link {
+   color: #777;
+}
+
+/* VITAE LG LAYOUT */
+[role=vitae].vitae-layout-lg {
+
+}
