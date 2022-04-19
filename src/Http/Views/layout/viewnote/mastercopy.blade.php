@@ -13,10 +13,9 @@
    <body>
       <main role="vitae" class="layout-md">
 
-         <article class="vitae-body">
+         <section class="vitae-body">
 
-            <header class="vitae-header">
-
+            <header class="vitae-body-header">
                <nav class="vitae-navbar">
                   <div class="navbar">
                      <a href="#" class="navbar-brand">
@@ -51,8 +50,7 @@
                      </ul>
                   </div>
                </nav>
-
-               <!-- <section class="row">
+               <section class="row">
                   <article class="col-3">
                      <img src="{{url("vitae/images/rlinares.png")}}" style="width:100%;" alt="@">
                   </article>
@@ -66,74 +64,44 @@
 
                      </p>
                   </article>
-               </section> -->
+               </section>
             </header>
 
-            <section class="vitae-content">
-               <nav class="vitae-nav">
-                  <article class="box box-avatar">
-                     <header class="box-header">
-                        <img src="{{url("vitae/images/rlinares.png")}}" style="width:100%;" alt="@">
-                     </header>
-                     <section class="box-body">
-                        <article class="block">
-                           <h4>Name User</h4>
-                           <p>Description User Degreed</p>
-                        </article>
-                     </section>
-                  </article>
-
-                  <article class="box">
-                     <header class="box-header">
-                        <h4>Title</h4>
-                     </header>
-                     <section class="box-body">
-                        <article class="block">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing
-                           elit, sed do eiusmod tempor incididunt ut labore et dolore
-                           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                           ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                           Duis aute irure dolor in reprehenderit in voluptate velit esse
-                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                           cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                           anim id est laborum.
-                        </article>
-                     </section>
-                  </article>
-
-               </nav>
-               <article class="vitae-article">
-                  <article class="box-group">
-                     @for($i=0; $i <= 5; $i++)
-                     <div class="box box-blog">
-                        <div class="box-header">
-                           <h4>Title</h4>
-                        </div>
-                        <div class="box-body">
-                           <div class="block">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing
-                              elit, sed do eiusmod tempor incididunt ut labore et dolore
-                              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                              ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                              anim id est laborum.
-                           </div>
-                        </div>
-                     </div>
-                     @endfor
-                  </article>
-
+            <article class="vitae-content">
+               @for($i=0; $i <= 1; $i++)
+               <article class="px-2 pb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
                </article>
-            </section>
-         </article>
+               @endfor
+            </article>
+
+         </section>
 
       </main>
 
       <script src="{{url('vitae/js/jquery-360.min.js')}}"></script>
       <script src="{{url('vitae/js/bootstrap.min.js')}}"></script>
       <script src="{{url('vitae/js/layout.ui.js')}}"></script>
+      <script type="text/javascript">
+         // var txtm = document.querySelector(".vitae-body-header");
+         //    console.log(inClassItem(txtm, "spand"));
+         //
+         //    function inClassItem(item, style) {
+         //       for (var i = 0; i < item.classList.length; i++) {
+         //          if(item.classList[i] == style ) {
+         //             return true;
+         //          }
+         //       }
+         //       return false;
+         //    }
+         //console.log(document.querySelector(".vitae-body-header").classList);
+      </script>
    </body>
 
 </html>

@@ -22,7 +22,7 @@ class Controller extends BaseController {
    protected $path = "vitae::";
 
    protected $varViews = [
-      "language" => "es_DO",
+      "language" => "es",
       "charset"   => "utf-8",
       "title"     => "Vitae"
    ];
@@ -32,7 +32,7 @@ class Controller extends BaseController {
       $this->app = $app;
 
       ## VIEW PARSE
-      $this->share($this->varViews);
+      //$this->share($this->varViews);
 
       ## APPSUPPORT PARSE
       if( method_exists($app, "share") ) {

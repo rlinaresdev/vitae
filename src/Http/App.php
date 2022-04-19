@@ -7,10 +7,22 @@
  *---------------------------------------------------------
 */
 
+/*
+* SKIN */
+$skin = new \Vitae\Support\Skin("bluelight");
+
 /* VIEWS */
-$this->loadViewsFrom(__DIR__.'/Views', 'vitae');
+$this->loadViewsFrom(__DIR__.'/Views', "vitae");
+$skin->share([
+   "language"     => "es",
+   "charset"      => "utf-8",
+   "title"        => "Vitae Page",
+]);
 
 /* ASSETS */
-$this->publishes([
-   __HTTP__."Resources" => public_path("vitae"),
-], "vitae");
+$this->publishes($skin->assets(), "vitae");
+
+\Artisan::call("vendor:publish", [
+   "--tag" => "vitae",
+   "--force" => true
+]);
