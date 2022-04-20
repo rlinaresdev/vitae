@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{$language}}" dir="ltr">
+
    <head>
       <meta charset="{{$charset}}">
       <title>{{$title}}</title>
@@ -16,7 +17,55 @@
          </nav>
 
          <section class="bluelight-body">
-            Content
+            <nav class="bluelight-navbar">
+               <div class="navbar">
+                  <a href="#" class="navbar-brand">
+                     Inicio
+                  </a>
+                  <ul class="nav vitae-nav-right ml-auto">
+
+                     <li class="nav-item dropdown">
+
+                        <a href="#" class="nav-link dropdown-toggle"
+                           id="dropdownTool"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                           <i class="mdi mdi-dot-net"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownTool">
+                           <li>
+                              <a href="https://github.com/rlinaresdev" target="_blank" class="dropdown-item">
+                                 <span class="mdi mdi-github" target="_blank"></span> Github
+                              </a>
+                              <a href="https://www.linkedin.com/in/linaresdev/" target="_blank" class="dropdown-item">
+                                 <span class="mdi mdi-linkedin"></span> Linkedin
+                              </a>
+                              <a href="https://www.facebook.com/linaresdev/" target="_blank" class="dropdown-item">
+                                 <span class="mdi mdi-facebook"></span> Facebook
+                              </a>
+                              <a href="https://twitter.com/linaresdev" target="_blank" class="dropdown-item">
+                                 <span class="mdi mdi-twitter"></span> Twitter
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+
+            @for($i=0; $i <= 5; $i++)
+            <article class="box box-light">
+               <header class="box-header">
+                  <h4>Title</h4>
+               </header>
+               <section class="box-body">
+                  <article class="block">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </article>
+               </section>
+            </article>
+            @endfor
          </section>
 
          <aside class="bluelight-aside">

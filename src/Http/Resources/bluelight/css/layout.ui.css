@@ -7,8 +7,26 @@ body{
    margin: 0 0;
    padding: 0 0;
 }
+
+.box .box-header {
+   padding: 20px 15px 5px 15px;
+}
+.box .box-header h4 {
+   font-size: 18px;
+   margin: 0 0;
+}
+.box .box-body .block {
+   font-size: 13.5px;
+   margin: 0 0;
+   padding: 0 15px 15px 15px;
+   text-align: justify;
+}
+.box .box-body .block p {
+   margin: 0 0 3px 0;
+   text-align: justify;
+}
+
 [role=bluelight] {
-   background: #ddd;
    display: flex;
    height: 100vh;
    margin: 0 20% 0 20%;
@@ -16,28 +34,55 @@ body{
 
 [role=bluelight] .bluelight-nav,
 [role=bluelight] .bluelight-aside{
-   background: #aaa;
    width: 25%;
 }
 [role=bluelight] .bluelight-body{
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
    width: 50%;
 }
+[role=bluelight] .bluelight-body .bluelight-navbar {
+   border-bottom: 1px solid #ddd;
+}
+
+/*
+* MAIN NAVBAR */
+.bluelight-navbar  .navbar {
+   padding: 0 0 !important;
+}
+.bluelight-navbar  .navbar .navbar-brand {
+   padding: 0 15px 0 15px;
+}
+.bluelight-navbar  .navbar .navbar-brand [class*="mdi mdi-"] {
+   font-size: 24px;
+}
+.bluelight-navbar  .navbar .dropdown-toggle [class*="mdi mdi-"] {
+   font-size: 26px;
+   line-height: 80%;
+}
+
+/*
+* BOX LIGHT */
+[role=bluelight] .bluelight-body .box.box-light {
+   border-bottom: 1px solid #ddd;
+}
+
 @media( max-width:1680px ) {
    [role=bluelight] {
       margin: 0 15% 0 15%;
    }
 }
-@media( max-width:1380px ) {
+@media( max-width:1460px ) {
    [role=bluelight] {
       margin: 0 10% 0 10%;
    }
 }
-@media( max-width:990px ) {
+@media( max-width:1080px ) {
    [role=bluelight] {
       margin: 0 0;
    }
 }
-@media( max-width:860px ) {
+@media( max-width:880px ) {
    [role=bluelight] .bluelight-nav,
    [role=bluelight] .bluelight-aside{
       position: fixed;
