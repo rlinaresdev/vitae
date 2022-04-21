@@ -13,7 +13,9 @@
    <body>
       <main role="bluelight" class="layout-md">
          <nav class="bluelight-nav">
-            Nav
+            <a href="#">
+               <img src="{{$skin->url('images/iipec.png')}}" width="42" height="42" alt="@">
+            </a>
          </nav>
 
          <section class="bluelight-body">
@@ -57,11 +59,27 @@
             @for($i=0; $i <= 5; $i++)
             <article class="box box-light">
                <header class="box-header">
-                  <h4>Title</h4>
+                  <h4>Extrato descriptivo o titulo amplio de la publicacion</h4>
+                  <div class="meta">
+                     <strong>Publicado:</strong> 21/04/2022
+                  </div>
                </header>
                <section class="box-body">
                   <article class="block">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     <img src="{{$skin->url('images/user.png')}}" class="image" alt="@">
+                     {!! Str::limit("
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                        200, null
+                     ) !!}
+                     <a href="#" class="btn btn-outline-primary btn-sm">
+                        Leer mas...
+                     </a>
+                  </article>
+                  <article class="block">
+                     <strong>Autor</strong> Ramon A Linares
                   </article>
                </section>
             </article>

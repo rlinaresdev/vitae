@@ -39,6 +39,7 @@ body{
 [role=bluelight] .bluelight-body{
    border-left: 1px solid #ddd;
    border-right: 1px solid #ddd;
+   overflow-y: auto;
    width: 50%;
 }
 [role=bluelight] .bluelight-body .bluelight-navbar {
@@ -65,6 +66,18 @@ body{
 * BOX LIGHT */
 [role=bluelight] .bluelight-body .box.box-light {
    border-bottom: 1px solid #ddd;
+}
+[role=bluelight] .bluelight-body .box.box-light .box-body .block {
+   clear: both;
+}
+[role=bluelight] .bluelight-body .box.box-light .box-body .block .image {
+   border: 2px solid #aaa;
+   border-radius: 4px 4px;
+   float: left;
+   height: 128px;
+   margin: 0 5px 0 3px;
+   padding: 1px 1px;
+   width: 128px;
 }
 
 @media( max-width:1680px ) {
